@@ -15,10 +15,10 @@ This project leverages the USD C++ API, domain randomization, and physics-aware 
 
 ```mermaid
 graph TD
-    A[C++ Entry Point<br>(main.cpp)] --> B[SceneBuilder<br>(USD API)]
-    B --> C[Randomizer<br>(C++ Random)]
+    A["C++ Entry Point<br>(main.cpp)"] --> B["SceneBuilder<br>(USD API)"]
+    B --> C["Randomizer<br>(C++ Random)"]
     C --> D[SensorManager]
-    D --> E[DataExporter<br>(JSON/Binary)]
+    D --> E["DataExporter<br>(JSON/Binary)"]
 ```
 
 ## 🛠 Tech Stack
