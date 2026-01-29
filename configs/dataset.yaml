@@ -1,0 +1,35 @@
+# Dataset Generation Configuration
+
+# Output settings
+output_dir: "output"
+dataset_name: "synthetic_robotics_v1"
+
+# Generation settings
+num_frames: 100
+seed: 42
+headless: true
+
+# Sensor settings
+camera:
+  resolution: [1280, 720]
+  focal_length: 35.0
+  horizontal_aperture: 20.955
+  vertical_aperture: 11.77
+  clipping_range: [0.1, 1000.0]
+
+lidar:
+  enabled: true
+  draw_points: false
+  draw_lines: false
+
+imu:
+  enabled: true
+
+# Randomization settings
+randomization:
+  lighting:
+    intensity_range: [200, 800]
+    temperature_range: [3000, 7500]
+  objects:
+    count_range: [5, 15]
+    scale_range: [0.5, 2.0]
